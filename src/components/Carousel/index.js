@@ -1,4 +1,4 @@
-import React, { Component, Children, cloneElement } from 'react';
+import React, { Component, Children, cloneElement, Fragment } from 'react';
 
 class Carousel extends Component {
   constructor(props) {
@@ -15,11 +15,11 @@ class Carousel extends Component {
       });
     });
     return(
-    <div>
+    <Fragment>
         {quant.map((item, index) => {
-          return <div key={index}>{childrenWithExtraProps}</div>
+          return <div className="carousel" key={index}>{childrenWithExtraProps}</div>
         })}
-    </div>
+    </Fragment>
   );
 }
 }
