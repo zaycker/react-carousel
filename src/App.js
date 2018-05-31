@@ -3,6 +3,7 @@ import Arrow from './components/Arrow';
 import Carousel from './components/Carousel';
 import Item from './components/Item';
 import Poster from './components/Poster';
+import POSTER_URL from './components/utils/PosterUrl';
 
 import './App.css';
 
@@ -11,10 +12,10 @@ class App extends Component {
     return (
       <div className="App">
         <Arrow direction="left" />
-        <Carousel quant={[1, 2, 3, 4, 5, 6]}>
+        <Carousel num={4} arr={POSTER_URL}>
 
             <Poster color="red"/>
-          
+
         </Carousel>
         <Arrow direction="right" />
       </div>
