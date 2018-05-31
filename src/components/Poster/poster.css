@@ -4,3 +4,9 @@
   height: 150px;
   border: 1px black solid;
 }
+.poster {
+  height: 200px;
+}
+.poster > img {
+  height: 100%;
+}

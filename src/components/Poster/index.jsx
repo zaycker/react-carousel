@@ -3,8 +3,14 @@ import './poster.css';
 
 const Poster = ({
   color,
-  number,
+  index,
+  index1,
+  index2,
+  index3,
+  url,
   }) => (
-    <div className={color}>{number}</div>
+    <div className="poster">
+      <img src={url} alt={index2} />
+    </div>
 );
 export default Poster;
